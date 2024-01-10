@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document of books</title>
+  <link rel="stylesheet" href="styl.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
+  
+ 
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <h1 style="color: black;font-family: cursive;">Just4u</h1>
+
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="bookList">
+    <!-- Book items will be displayed here -->
+  </main>
+    
+   
+ 
+  <div class="container">
+    <h1 class="title" style="font-family: cursive;">Discover the Best books you want...</h1>
+
+    <div class="shop-content">
+
+
+      <div class="book-box" >
+        <div class="pic" onclick="showPopup('This book contains full of adventures', 'tempest.jfif', 'Publidhed on: 9-10-2003')"  ><img src="tempest.jfif" class="book-img">
+        </div>
+        <h2 class="book-title">TEMPEST <div>The tide of season</div></h2>
+        <h3 class="book-details">Author:Dr.Thomson</h3>
+        <span class="book-price">Rs.590</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+      
+
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book tells about the love of sistrer', 'good%20sis.jpg', 'Publidhed on:11-10-2008')"><img src="good%20sis.jpg" class="book-img"></div>
+        <h2 class="book-title">THE GOOD SISTER <DIV>Alexa blye</DIV></h2>
+        <h3 class="book-details">Author:alexa blye</h3>
+        <span class="book-price">Rs.460</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book tells about the boy MAX', 'stars.jpg', 'Publidhed on:29-1-2004')"><img src="stars.jpg" class="book-img"></div>
+        <h2 class="book-title">THE STARS OF THE NORTH</h2>
+        <h3 class="book-details">Author:DR.Thaheer</h3>
+        <span class="book-price">Rs.899</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book is about NUSA star', 'looking-for-stars.jpg', 'Publidhed on:17-11-2010')" ><img src="looking-for-stars.jpg" class="book-img"></div>
+        <h2 class="book-title">LOOKING FOR STARS</h2>
+        <h3 class="book-details">Author: Miss.Stella</h3>
+        <span class="book-price">Rs.655</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book is full of joy & entertinement', 'talia.png', 'Publidhed on:15-3-1980')"><img src="talia.png" class="book-img"></div>
+        <h2 class="book-title">TALIA THE LIONHEARTED </h2>
+        <h3 class="book-details">Author: Paricia faithfull</h3>
+        <span class="book-price">Rs.425</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book is about finding stars by willem', 'shoot%20for%20the%20stars.png', 'Publidhed on:1479-1970')"><img src="shoot%20for%20the%20stars.png" class="book-img"></div>
+        <h2 class="book-title">SHOOT FOR THE STARS</h2>
+        <h3 class="book-details">Author:miss Honey</h3>
+        <span class="book-price">Rs.350</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book about dark_forces in castel','Dark-castle.jpg', 'Publidhed on:23-5-2002')"><img src="Dark-castle.jpg" class="book-img"></div>
+        <h2 class="book-title">THE DARK CASTEL</h2>
+        <h3 class="book-details">Author:weliymes</h3>
+        <span class="book-price">Rs.765</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="book-box">
+        <div class="pic" onclick="showPopup('This book about the boy wants to sleep on star','sleep.jpg', 'Publidhed on:12-9-2015')"><img src="sleep.jpg" class="book-img"></div>
+        <h2 class="book-title">SLEEP IN A SAR OF STARS</h2>
+        <h3 class="book-details">Author:jon hook</h3>
+        <span class="book-price">Rs.995</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+
+
+
+    
+    
+
+    </div>
+  </div>
+  <script src="jo.js"></script>
+  
+   <div class="popup" id="popup">
+    <img id="popup-image" src="" alt="Book Cover">
+    <h2 id="popup-title"></h2>
+    <h2 id="popup-details"></h2>
+    <button onclick="closePopup()" class="bb" style="align-items: bottum  left;">Close</button>
+  </div>
+  
+   <script>
+    function showPopup(title, imageSrc, details) {
+      const popup = document.getElementById('popup');
+      const popupTitle = document.getElementById('popup-title');
+      const popupImage = document.getElementById('popup-image');
+      const popupDetails = document.getElementById('popup-details');
+
+      popupTitle.textContent = title;
+      popupImage.src = imageSrc;
+      popupDetails.textContent = details;
+
+      popup.style.display = 'block';
+    }
+
+    function closePopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
